@@ -4,7 +4,7 @@ import { RouteCompComponent } from './route-comp/route-comp.component';
 import { AppComponent } from './app.component';
 import { LazyModule } from './lazy-load/lazy-load.module';
 const Route: Routes = [
-  { path: 'RouteComp', component: RouteCompComponent },
+  { path: 'RouteComp/:routeParam', component: RouteCompComponent },
   {
     path: 'LazyComp',
     loadChildren: () => LazyModule,

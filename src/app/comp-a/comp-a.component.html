@@ -10,7 +10,9 @@
   <input type="text" name="mobile" [(ngModel)]="mobile" required /><br />
   <button type="submit">Submit</button>
 </form>
-<button><a [routerLink]="'/RouteComp'">GO TO ROUTER COMP</a></button>
+<button>
+  <a [routerLink]="'/RouteComp/' + routeParam">GO TO ROUTER COMP</a>
+</button>
 <button><a [routerLink]="'/'">GO TO App COMP</a></button>
 <button><a [routerLink]="'/LazyComp'">GO TO Lazy COMP</a></button>
 <router-outlet></router-outlet>

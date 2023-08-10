@@ -15,7 +15,7 @@ export class CompAComponent implements OnInit {
   studClass: string;
   studMobile: string;
   studData: string[] = [];
-
+  routeParam: string = 'data came from routes';
   studForm: FormGroup;
   constructor(
     private studFormService: StudentformService,
