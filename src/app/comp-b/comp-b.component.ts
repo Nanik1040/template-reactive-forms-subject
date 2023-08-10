@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { StudentformService } from '../studentform.service';
 @Component({
   selector: 'app-comp-b',
@@ -8,6 +8,8 @@ import { StudentformService } from '../studentform.service';
 export class CompBComponent implements OnInit {
   constructor(private studentFormService: StudentformService) {}
   studData: string[] = [];
+  @Input() parentData: any;
+
   ngOnInit() {
     this.studentFormService.getStudData().subscribe((form) => {
       this.studData.push(form);
