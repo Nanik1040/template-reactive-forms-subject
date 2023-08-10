@@ -16,6 +16,9 @@ import { NgxDatatableModule } from '@swimlane/ngx-datatable';
 import { CompAComponent } from './comp-a/comp-a.component';
 import { CompBComponent } from './comp-b/comp-b.component';
 import { ReactiveFormsModule } from '@angular/forms';
+import { RouteCompComponent } from './route-comp/route-comp.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutingModule } from './app-routing.module';
 // notice this
 
 @NgModule({
@@ -24,6 +27,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     HttpModule,
     ReactiveFormsModule,
+    RouterModule,
+    AppRoutingModule,
     ToastrModule.forRoot({
       timeOut: 10000,
       positionClass: 'toast-bottom-right',
@@ -42,6 +47,7 @@ import { ReactiveFormsModule } from '@angular/forms';
     AlertComponent,
     CompAComponent,
     CompBComponent,
+    RouteCompComponent,
   ],
   bootstrap: [AppComponent],
   providers: [UserService, HttpClient],

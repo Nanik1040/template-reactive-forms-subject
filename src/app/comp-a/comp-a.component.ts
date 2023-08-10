@@ -3,6 +3,7 @@ import { StudentformService } from '../studentform.service';
 import { NgForm } from '@angular/forms';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { Validators } from '@angular/forms';
+import { RouterLink } from '@angular/router';
 @Component({
   selector: 'app-comp-a',
   templateUrl: './comp-a.component.html',
