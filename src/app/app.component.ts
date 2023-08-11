@@ -7,5 +7,14 @@ import { Component, Input } from '@angular/core';
 })
 export class AppComponent {
   name = 'Angular 6';
+  currentDate = new Date();
+
+  updateDatePure() {
+    this.currentDate = new Date();
+  }
+
+  updateDateImpure() {
+    this.currentDate = new Date();
+  }
   // @Input() parentData = this.name;
 }

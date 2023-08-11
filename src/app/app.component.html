@@ -1,5 +1,11 @@
 This is parent comp and the data which coming here from child comp -
 {{ childData }}
+<h2>Pure Pipe</h2>
+<p>Last Updated: {{ currentDate | pureDate }}</p>
+<button (click)="updateDatePure()">Update Date (Pure)</button>
+
+<h2>Impure Pipe</h2>
+<p>Last Updated: {{ currentDate | impureDate }}</p>
 <app-demo></app-demo>
 <app-comp-a></app-comp-a>
 <app-comp-b [parentData]="name"></app-comp-b>

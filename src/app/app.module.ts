@@ -19,6 +19,9 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { RouteCompComponent } from './route-comp/route-comp.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
+// import {} from './pure-date.pipe';
+import { PureDatePipe } from './pure-date.pipe';
+import { ImpureDatePipe } from './impure-date.pipe';
 // notice this
 
 @NgModule({
@@ -48,6 +51,8 @@ import { AppRoutingModule } from './app-routing.module';
     CompAComponent,
     CompBComponent,
     RouteCompComponent,
+    PureDatePipe, // Declare the pure pipe
+    ImpureDatePipe,
   ],
   bootstrap: [AppComponent],
   providers: [UserService, HttpClient],
