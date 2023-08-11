@@ -74,3 +74,28 @@
 		</ul>
 	</div>
 </div> -->
+<input
+  type="text"
+  placeholder="enter number between 1 - 10"
+  [(ngModel)]="userId"
+/>
+<button (click)="getUserData(userId)">GET DATA</button>
+
+<table>
+  <thead>
+    <tr>
+      <th>body</th>
+      <th>id</th>
+      <th>title</th>
+      <th>userId</th>
+    </tr>
+  </thead>
+  <tbody *ngFor="let data of userPost">
+    <tr>
+      <td>{{ data.body }}</td>
+      <td>{{ data.id }}</td>
+      <td>{{ data.title }}</td>
+      <td>{{ data.userId }}</td>
+    </tr>
+  </tbody>
+</table>
