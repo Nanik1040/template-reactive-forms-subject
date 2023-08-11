@@ -12,7 +12,7 @@ export class CompBComponent implements OnInit {
 
   ngOnInit() {
     this.studentFormService.getStudData().subscribe((form) => {
-      this.studData.push(form);
+      this.studData = (form);
       //      this.studData = [];
     });
   }
